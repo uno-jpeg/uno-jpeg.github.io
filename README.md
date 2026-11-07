@@ -1,1 +1,7 @@
-# uno-jpeg.github.io
+# uno
+
+# my socials:
+
+github
+x
+telegram
