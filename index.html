@@ -1,44 +1,88 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>uno</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
-            background-color: #1C2842;
-            color: #ffffff;
+            background: #1C2842;
+            color: #fff;
             font-family: "Inter", sans-serif;
-
-            min-height: 100vh;
             margin: 0;
-
+            min-height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
+            padding: 24px;
         }
 
         main {
-            text-align: center;
+            width: 100%;
+            max-width: 420px;
         }
 
-        a {
-            color: #ffffff;
-            text-decoration: none;
+        h1 {
+            font-size: 30px;
+            font-weight: 600;
+            letter-spacing: -1.5px;
+            margin: 0;
         }
 
-        a:hover {
-            text-decoration: underline;
+        .divider {
+            height: 1px;
+            background: rgba(255, 255, 255, 0.15);
+            margin: 26px 0;
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 32px;
+        }
+
+        h2 {
+            font-size: 13px;
+            font-weight: 600;
+            color: #fff;
+            margin: 0 0 16px;
+            text-transform: lowercase;
         }
 
         ul {
             list-style: none;
             padding: 0;
-            line-height: 1.8;
+            margin: 0;
+        }
+
+        li {
+            margin-bottom: 11px;
+        }
+
+        a {
+            color: #C5CAD4;
+            font-size: 13px;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        a:hover {
+            color: #fff;
+        }
+
+        .coming-soon {
+            color: #8993A6;
+            font-size: 13px;
         }
     </style>
 </head>
@@ -47,13 +91,23 @@
     <main>
         <h1>uno</h1>
 
-        <h2>Socials</h2>
+        <div class="divider"></div>
 
-        <ul>
-            <li><a href="https://x.com/uno_jpeg" target="_blank" rel="noopener noreferrer">X</a></li>
-            <li><a href="https://github.com/uno-jpeg" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-            <li><a href="https://hashnode.com/@uno-jpeg" target="_blank" rel="noopener noreferrer">Hashnode</a></li>
-        </ul>
+        <div class="content">
+            <section>
+                <h2>socials</h2>
+                <ul>
+                    <li><a href="https://x.com/uno_jpeg" target="_blank" rel="noopener noreferrer">X ↗</a></li>
+                    <li><a href="https://github.com/uno-jpeg" target="_blank" rel="noopener noreferrer">GitHub ↗</a></li>
+                    <li><a href="https://hashnode.com/@uno-jpeg" target="_blank" rel="noopener noreferrer">Hashnode ↗</a></li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>blog</h2>
+                <span class="coming-soon">Coming soon.</span>
+            </section>
+        </div>
     </main>
 </body>
 </html>
