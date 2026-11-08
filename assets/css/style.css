@@ -311,3 +311,56 @@ footer {
     color: #FFF7F1;
 }
 
+
+/* Exact original homepage layout */
+
+.home-page {
+    align-items: center;
+}
+
+.home-page main {
+    width: 100%;
+    max-width: 420px;
+}
+
+.home-page h1 {
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: -1.5px;
+    margin: 0;
+}
+
+.home-page .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+}
+
+.home-page h2 {
+    font-size: 13px;
+    font-weight: 600;
+    color: #FFF7F1;
+    margin: 0 0 16px;
+    text-transform: lowercase;
+}
+
+.home-page ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.home-page li {
+    margin-bottom: 11px;
+}
+
+.home-page a {
+    color: #C5CAD4;
+    font-size: 13px;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.home-page a:hover {
+    color: #FFF7F1;
+}
