@@ -24,12 +24,6 @@
 <body class="{{ page.body_class }}">
     <main>
         {{ content }}
-
-        {% unless page.url == '/' %}
-            <footer>
-                <span>© {{ site.time | date: "%Y" }} uno</span>
-            </footer>
-        {% endunless %}
     </main>
 </body>
 </html>
