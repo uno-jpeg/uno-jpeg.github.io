@@ -364,3 +364,20 @@ footer {
 .home-page a:hover {
     color: #FFF7F1;
 }
+
+
+/* Homepage layout override */
+
+.home-page main {
+    max-width: 420px;
+}
+
+.home-page .content {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 32px;
+}
+
+.home-page .content section {
+    min-width: 0;
+}
