@@ -21,13 +21,15 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 
-<body>
+<body class="{% if page.url == '/' %}home-page{% endif %}">
     <main>
         {{ content }}
 
-        <footer>
-            <span>© {{ site.time | date: "%Y" }} uno</span>
-        </footer>
+        {% unless page.url == '/' %}
+            <footer>
+                <span>© {{ site.time | date: "%Y" }} uno</span>
+            </footer>
+        {% endunless %}
     </main>
 </body>
 </html>
