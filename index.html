@@ -1,136 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>uno</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+---
+layout: default
+---
 
-    <style>
-        * {
-            box-sizing: border-box;
-        }
+<section class="home">
+    <div class="content">
+        <section>
+            <h2>socials</h2>
 
-        body {
-            background: #1C2842;
-            color: #FFF7F1;
-            font-family: "Inter", sans-serif;
-            margin: 0;
-            min-height: 100vh;
-            padding: 64px;
+            <ul>
+                <li>
+                    <a href="https://x.com/uno_jpeg" target="_blank" rel="noopener noreferrer">X ↗</a>
+                </li>
+                <li>
+                    <a href="https://github.com/uno-jpeg" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+                </li>
+                <li>
+                    <a href="https://hashnode.com/@uno-jpeg" target="_blank" rel="noopener noreferrer">Hashnode ↗</a>
+                </li>
+            </ul>
+        </section>
 
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            position: relative;
-            isolation: isolate;
-        }
-
-    body::before {
-        content: "";
-        position: fixed;
-        inset: 0;
-        pointer-events: none;
-        z-index: -1;
-
-        opacity: 0.10;
-
-        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-
-        background-size: 512px 512px;
-    }
-
-        main {
-            width: 100%;
-            max-width: 420px;
-        }
-
-        h1 {
-            font-size: 30px;
-            font-weight: 600;
-            letter-spacing: -1.5px;
-            margin: 0;
-        }
-
-        .divider {
-            height: 1px;
-            background: rgba(255, 255, 255, 0.15);
-            margin: 26px 0;
-        }
-
-        .content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 32px;
-        }
-
-        h2 {
-            font-size: 13px;
-            font-weight: 600;
-            color: #FFF7F1;
-            margin: 0 0 16px;
-            text-transform: lowercase;
-        }
-
-        ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        li {
-            margin-bottom: 11px;
-        }
-
-        a {
-            color: #C5CAD4;
-            font-size: 13px;
-            text-decoration: none;
-            transition: color 0.2s ease;
-        }
-
-        a:hover {
-            color: #FFF7F1;
-        }
-
-        .coming-soon {
-            color: #8993A6;
-            font-size: 13px;
-        }
-
-        @media (max-width: 600px) {
-            body {
-                padding: 32px 24px;
-            }
-        }
-    </style>
-</head>
-
-<body>
-    <main>
-        <h1>uno</h1>
-
-        <div class="divider"></div>
-
-        <div class="content">
-            <section>
-                <h2>socials</h2>
-                <ul>
-                    <li><a href="https://x.com/uno_jpeg" target="_blank" rel="noopener noreferrer">X ↗</a></li>
-                    <li><a href="https://github.com/uno-jpeg" target="_blank" rel="noopener noreferrer">GitHub ↗</a></li>
-                    <li><a href="https://hashnode.com/@uno-jpeg" target="_blank" rel="noopener noreferrer">Hashnode ↗</a></li>
-                </ul>
-            </section>
-
-            <section>
-                <h2>blog</h2>
-                <span class="coming-soon">Coming soon.</span>
-            </section>
-        </div>
-    </main>
-</body>
-</html>
+        <section>
+            <h2>blog</h2>
+            <a href="{{ '/blog/' | relative_url }}">Read articles ↗</a>
+        </section>
+    </div>
+</section>
