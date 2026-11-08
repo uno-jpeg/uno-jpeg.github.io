@@ -381,3 +381,70 @@ footer {
 .home-page .content section {
     min-width: 0;
 }
+
+
+/* Homepage — original design */
+
+body.home-page {
+    align-items: center;
+    justify-content: center;
+}
+
+body.home-page main {
+    width: 100%;
+    max-width: 420px;
+}
+
+body.home-page h1 {
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: -1.5px;
+    margin: 0;
+}
+
+body.home-page .divider {
+    height: 1px;
+    margin: 26px 0;
+}
+
+body.home-page .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+}
+
+body.home-page h2 {
+    font-size: 13px;
+    font-weight: 600;
+    color: #FFF7F1;
+    margin: 0 0 16px;
+    text-transform: lowercase;
+}
+
+body.home-page ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+body.home-page li {
+    margin-bottom: 11px;
+}
+
+body.home-page a {
+    color: #C5CAD4;
+    font-size: 13px;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+body.home-page a:hover {
+    color: #FFF7F1;
+}
+
+@media (max-width: 600px) {
+    body.home-page {
+        padding: 32px 24px;
+    }
+}
+
