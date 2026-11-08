@@ -19,15 +19,18 @@ body {
 }
 
 /* Background grain */
+
 body::before {
     content: "";
     position: fixed;
     inset: 0;
     pointer-events: none;
     z-index: -1;
+
     opacity: 0.10;
 
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+
     background-size: 512px 512px;
 }
 
@@ -37,6 +40,7 @@ main {
 }
 
 /* Header */
+
 header {
     display: flex;
     align-items: center;
@@ -74,6 +78,7 @@ nav a:hover {
 }
 
 /* Blog */
+
 .blog h1 {
     font-size: 26px;
     font-weight: 600;
@@ -131,6 +136,7 @@ nav a:hover {
 }
 
 /* Individual post */
+
 .post-header {
     display: block;
     margin-bottom: 36px;
@@ -205,185 +211,7 @@ nav a:hover {
     margin-bottom: 20px;
 }
 
-/* Footer */
-footer {
-    border-top: 1px solid rgba(255, 255, 255, 0.15);
-    color: #8993A6;
-    font-size: 11px;
-    margin-top: 64px;
-    padding-top: 20px;
-}
-
-/* Mobile */
-@media (max-width: 600px) {
-    body {
-        padding: 32px 24px;
-    }
-
-    nav {
-        gap: 18px;
-    }
-
-    .post-header h1 {
-        font-size: 24px;
-    }
-}
-
-
 /* Home page */
-.home .content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 32px;
-}
-
-.home h2 {
-    color: #FFF7F1;
-    font-size: 13px;
-    font-weight: 600;
-    margin: 0 0 16px;
-    text-transform: lowercase;
-}
-
-.home ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.home li {
-    margin-bottom: 11px;
-}
-
-.home a {
-    color: #C5CAD4;
-    font-size: 13px;
-    text-decoration: none;
-    transition: color 0.2s ease;
-}
-
-.home a:hover {
-    color: #FFF7F1;
-}
-
-
-/* Home page */
-
-.home-title {
-    font-size: 30px;
-    font-weight: 600;
-    letter-spacing: -1.5px;
-    margin: 0;
-}
-
-.home-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 32px;
-}
-
-.home-content h2 {
-    font-size: 13px;
-    font-weight: 600;
-    color: #FFF7F1;
-    margin: 0 0 16px;
-    text-transform: lowercase;
-}
-
-.home-content ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.home-content li {
-    margin-bottom: 11px;
-}
-
-.home-content a {
-    color: #C5CAD4;
-    font-size: 13px;
-    text-decoration: none;
-    transition: color 0.2s ease;
-}
-
-.home-content a:hover {
-    color: #FFF7F1;
-}
-
-
-/* Exact original homepage layout */
-
-.home-page {
-    align-items: center;
-}
-
-.home-page main {
-    width: 100%;
-    max-width: 420px;
-}
-
-.home-page h1 {
-    font-size: 30px;
-    font-weight: 600;
-    letter-spacing: -1.5px;
-    margin: 0;
-}
-
-.home-page .content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 32px;
-}
-
-.home-page h2 {
-    font-size: 13px;
-    font-weight: 600;
-    color: #FFF7F1;
-    margin: 0 0 16px;
-    text-transform: lowercase;
-}
-
-.home-page ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.home-page li {
-    margin-bottom: 11px;
-}
-
-.home-page a {
-    color: #C5CAD4;
-    font-size: 13px;
-    text-decoration: none;
-    transition: color 0.2s ease;
-}
-
-.home-page a:hover {
-    color: #FFF7F1;
-}
-
-
-/* Homepage layout override */
-
-.home-page main {
-    max-width: 420px;
-}
-
-.home-page .content {
-    display: grid !important;
-    grid-template-columns: 1fr 1fr !important;
-    gap: 32px;
-}
-
-.home-page .content section {
-    min-width: 0;
-}
-
-
-/* Homepage — original design */
 
 body.home-page {
     align-items: center;
@@ -411,6 +239,10 @@ body.home-page .content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 32px;
+}
+
+body.home-page .content section {
+    min-width: 0;
 }
 
 body.home-page h2 {
@@ -442,9 +274,18 @@ body.home-page a:hover {
     color: #FFF7F1;
 }
 
+/* Mobile */
+
 @media (max-width: 600px) {
-    body.home-page {
+    body {
         padding: 32px 24px;
     }
-}
 
+    nav {
+        gap: 18px;
+    }
+
+    .post-header h1 {
+        font-size: 24px;
+    }
+}
