@@ -1,1 +1,41 @@
 
+---
+layout: default
+title: Blog
+permalink: /blog/
+---
+
+<section class="blog">
+    <h1>Writing</h1>
+
+    <p class="blog-description">
+        Thoughts on application security, engineering and learning.
+    </p>
+
+    <div class="post-list">
+        {% assign posts = site.posts %}
+
+        {% if posts.size > 0 %}
+
+            {% for post in posts %}
+                <article class="post-item">
+                    <a href="{{ post.url | relative_url }}">
+                        {{ post.title }}
+                    </a>
+
+                    <time datetime="{{ post.date | date_to_xmlschema }}">
+                        {{ post.date | date: "%B %d, %Y" }}
+                    </time>
+
+                    {% if post.description %}
+                        <p>{{ post.description }}</p>
+                    {% endif %}
+                </article>
+            {% endfor %}
+
+        {% else %}
+            <p class="empty-blog">No posts yet.</p>
+        {% endif %}
+    </div>
+</section>
+
