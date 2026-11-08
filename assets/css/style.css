@@ -229,3 +229,40 @@ footer {
     }
 }
 
+
+/* Home page */
+.home .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+}
+
+.home h2 {
+    color: #FFF7F1;
+    font-size: 13px;
+    font-weight: 600;
+    margin: 0 0 16px;
+    text-transform: lowercase;
+}
+
+.home ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.home li {
+    margin-bottom: 11px;
+}
+
+.home a {
+    color: #C5CAD4;
+    font-size: 13px;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.home a:hover {
+    color: #FFF7F1;
+}
+
